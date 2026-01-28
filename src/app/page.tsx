@@ -3,6 +3,8 @@ import About from "@/sections/about";
 import Projects from "@/sections/projects";
 import LightRays from "@/components/visuals/lightRays";
 import Achievement from "@/sections/achievement";
+import Contact from "@/sections/contact";
+import Footer from "@/sections/footer";
 
 export default function Page() {
   return (
@@ -27,6 +29,8 @@ export default function Page() {
         <About />
         <Projects />
         <Achievement />
+        <Contact />
+        <Footer />
       </div>
 
     </main>

@@ -1,7 +1,33 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import SpotlightCard from "../components/SpotlightCard";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
 const achievements = [
   {
@@ -38,51 +64,69 @@ const achievements = [
 
 export default function Achievement() {
   return (
-    <section className="relative w-full py-32">
+    <motion.section
+      className="relative w-full py-32"
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.3 }}
+    >
       {/* Heading */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-16">
+      <motion.div
+        variants={fadeUp}
+        className="max-w-7xl mx-auto px-6 text-center mb-16"
+      >
         <h2 className="text-3xl md:text-4xl font-semibold text-white">
           My <span className="text-blue-400">Achievements</span>
         </h2>
         <p className="mt-3 text-[#94A3B8] max-w-2xl mx-auto">
           A few milestones that reflect my journey and growth.
         </p>
-      </div>
+      </motion.div>
 
       {/* Cards */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        variants={container}
+        className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         {achievements.map((item, i) => (
-          <SpotlightCard
+          <motion.div
             key={i}
-            className="custom-spotlight-card"
-            spotlightColor="rgba(0, 229, 255, 0.2)"
+            variants={fadeUp}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
-            {/* Image */}
-            <div className="relative w-full h-55 rounded-xl overflow-hidden mb-4">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
-                priority={i === 0}
-              />
-            </div>
+            <SpotlightCard
+              className="custom-spotlight-card h-full"
+              spotlightColor="rgba(0, 229, 255, 0.2)"
+            >
+              {/* Image */}
+              <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={i === 0}
+                />
+              </div>
 
-            <span className="text-blue-400 text-sm font-medium">
-              {item.year}
-            </span>
+              <span className="text-blue-400 text-sm font-medium">
+                {item.year}
+              </span>
 
-            <h3 className="mt-2 text-lg font-semibold text-white">
-              {item.title}
-            </h3>
+              <h3 className="mt-2 text-lg font-semibold text-white">
+                {item.title}
+              </h3>
 
-            <p className="mt-2 text-sm text-[#94A3B8] leading-relaxed">
-              {item.desc}
-            </p>
-          </SpotlightCard>
+              <p className="mt-2 text-sm text-[#94A3B8] leading-relaxed">
+                {item.desc}
+              </p>
+            </SpotlightCard>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
