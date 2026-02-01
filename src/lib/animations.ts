@@ -1,4 +1,6 @@
-export const container = {
+import { Variants, easeOut } from "framer-motion";
+
+export const container: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -8,7 +10,7 @@ export const container = {
   },
 };
 
-export const fadeUp = {
+export const fadeUp: Variants = {
   hidden: {
     opacity: 0,
     y: 24,
@@ -20,7 +22,7 @@ export const fadeUp = {
     filter: "blur(0px)",
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: easeOut, // ✅ sama persis rasanya
     },
   },
 };
