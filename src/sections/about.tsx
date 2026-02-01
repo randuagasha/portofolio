@@ -3,90 +3,90 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { container, fadeUp } from "@/lib/animations";
-import LogoLoop from "@/components/LogoLoop";
-import {
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiReact,
-  SiExpo,
-  SiNextdotjs,
-  SiExpress,
-  SiGo,
-  SiMysql,
-  SiPython,
-  SiFlutter,
-} from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+// import LogoLoop from "@/components/LogoLoop";
+// import {
+//   SiJavascript,
+//   SiHtml5,
+//   SiCss3,
+//   SiTailwindcss,
+//   SiReact,
+//   SiExpo,
+//   SiNextdotjs,
+//   SiExpress,
+//   SiGo,
+//   SiMysql,
+//   SiPython,
+//   SiFlutter,
+// } from "react-icons/si";
+// import { FaGithub } from "react-icons/fa";
 
-const techLogos = [
-  {
-    node: <FaGithub className="text-white" />,
-    title: "GitHub",
-    href: "https://github.com",
-  },
-  {
-    node: <SiJavascript className="text-white" />,
-    title: "JavaScript",
-    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    node: <SiHtml5 className="text-white" />,
-    title: "HTML",
-    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    node: <SiCss3 className="text-white" />,
-    title: "CSS",
-    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    node: <SiTailwindcss className="text-white" />,
-    title: "Tailwind CSS",
-    href: "https://tailwindcss.com",
-  },
-  {
-    node: <SiReact className="text-white" />,
-    title: "React",
-    href: "https://react.dev",
-  },
-  {
-    node: <SiExpo className="text-white" />,
-    title: "Expo",
-    href: "https://expo.dev",
-  },
-  {
-    node: <SiNextdotjs className="text-white" />,
-    title: "Next.js",
-    href: "https://nextjs.org",
-  },
-  {
-    node: <SiExpress className="text-white" />,
-    title: "Express",
-    href: "https://expressjs.com",
-  },
-  {
-    node: <SiGo className="text-white" />,
-    title: "Golang",
-    href: "https://go.dev",
-  },
-  {
-    node: <SiMysql className="text-white" />,
-    title: "MySQL",
-    href: "https://www.mysql.com",
-  },
-  {
-    node: <SiPython className="text-white" />,
-    title: "Python",
-    href: "https://www.python.org",
-  },
-  {
-    node: <SiFlutter className="text-white" />,
-    title: "Flutter",
-    href: "https://flutter.dev",
-  },
-];
+// const techLogos = [
+//   {
+//     node: <FaGithub className="text-white" />,
+//     title: "GitHub",
+//     href: "https://github.com",
+//   },
+//   {
+//     node: <SiJavascript className="text-white" />,
+//     title: "JavaScript",
+//     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+//   },
+//   {
+//     node: <SiHtml5 className="text-white" />,
+//     title: "HTML",
+//     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+//   },
+//   {
+//     node: <SiCss3 className="text-white" />,
+//     title: "CSS",
+//     href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+//   },
+//   {
+//     node: <SiTailwindcss className="text-white" />,
+//     title: "Tailwind CSS",
+//     href: "https://tailwindcss.com",
+//   },
+//   {
+//     node: <SiReact className="text-white" />,
+//     title: "React",
+//     href: "https://react.dev",
+//   },
+//   {
+//     node: <SiExpo className="text-white" />,
+//     title: "Expo",
+//     href: "https://expo.dev",
+//   },
+//   {
+//     node: <SiNextdotjs className="text-white" />,
+//     title: "Next.js",
+//     href: "https://nextjs.org",
+//   },
+//   {
+//     node: <SiExpress className="text-white" />,
+//     title: "Express",
+//     href: "https://expressjs.com",
+//   },
+//   {
+//     node: <SiGo className="text-white" />,
+//     title: "Golang",
+//     href: "https://go.dev",
+//   },
+//   {
+//     node: <SiMysql className="text-white" />,
+//     title: "MySQL",
+//     href: "https://www.mysql.com",
+//   },
+//   {
+//     node: <SiPython className="text-white" />,
+//     title: "Python",
+//     href: "https://www.python.org",
+//   },
+//   {
+//     node: <SiFlutter className="text-white" />,
+//     title: "Flutter",
+//     href: "https://flutter.dev",
+//   },
+// ];
 
 export default function About() {
   return (
@@ -150,7 +150,7 @@ export default function About() {
       </div>
 
       {/* Logo loop */}
-      <div className="mt-20 relative px-35 h-50 overflow-hidden">
+      {/* <div className="mt-20 relative px-35 h-50 overflow-hidden">
         <LogoLoop
           logos={techLogos}
           speed={100}
@@ -161,7 +161,7 @@ export default function About() {
           scaleOnHover
           ariaLabel="Technology stack"
         />
-      </div>
+      </div> */}
     </motion.section>
   );
 }

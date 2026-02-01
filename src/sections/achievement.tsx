@@ -15,17 +15,11 @@ const container = {
 };
 
 const fadeUp = {
-  hidden: {
-    opacity: 0,
-    y: 30,
-  },
+  hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut",
-    },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 
@@ -64,17 +58,17 @@ const achievements = [
 
 export default function Achievement() {
   return (
-    <motion.section
-      className="relative w-full py-32"
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.3 }}
+    <section
+      id="achievement"
+      className="relative w-full py-28 md:py-32 scroll-mt-[80px]"
     >
       {/* Heading */}
       <motion.div
         variants={fadeUp}
-        className="max-w-7xl mx-auto px-6 text-center mb-16"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        className="max-w-7xl mx-auto px-6 text-center mb-14 md:mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-semibold text-white">
           My <span className="text-blue-400">Achievements</span>
@@ -87,7 +81,10 @@ export default function Achievement() {
       {/* Cards */}
       <motion.div
         variants={container}
-        className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         {achievements.map((item, i) => (
           <motion.div
@@ -97,17 +94,16 @@ export default function Achievement() {
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <SpotlightCard
-              className="custom-spotlight-card h-full"
+              className="h-full"
               spotlightColor="rgba(0, 229, 255, 0.2)"
             >
-              {/* Image */}
               <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={i === 0}
                 />
               </div>
@@ -127,6 +123,6 @@ export default function Achievement() {
           </motion.div>
         ))}
       </motion.div>
-    </motion.section>
+    </section>
   );
 }

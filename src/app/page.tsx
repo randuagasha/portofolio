@@ -8,23 +8,31 @@ import Footer from "@/sections/footer";
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen bg-[#0F172A] overflow-hidden">
-      
-      {/* GLOBAL BACKGROUND */}
+    <main className="relative min-h-[100dvh] bg-[#020617] overflow-hidden">
+      {/* BACKGROUND LAYER */}
       <div className="fixed inset-0 pointer-events-none">
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#ffffff"
-          raysSpeed={0.8}
-          lightSpread={0.6}
-          rayLength={2.5}
-          followMouse={false}
-          fadeDistance={1}
-        />
+        {/* base */}
+        <div className="absolute inset-0 bg-[#020617] z-0" />
+
+        {/* gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/80 via-[#020617]/50 to-[#020617] z-10" />
+
+        {/* LIGHT RAYS — DIPAKSA DI ATAS */}
+        <div className="absolute inset-0 z-20">
+          <LightRays
+            raysOrigin="top-center"
+            raysColor="#ffffff"
+            raysSpeed={0.8}
+            lightSpread={0.6}
+            rayLength={2.5}
+            followMouse={false}
+            fadeDistance={1}
+          />
+        </div>
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10">
+      <div className="relative z-30">
         <Home />
         <About />
         <Projects />
@@ -32,7 +40,6 @@ export default function Page() {
         <Contact />
         <Footer />
       </div>
-
     </main>
   );
 }

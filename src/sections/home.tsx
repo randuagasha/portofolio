@@ -8,12 +8,7 @@ export default function Home() {
   return (
     <motion.section
       id="home"
-      className="
-        relative w-full
-        pt-36 md:pt-44 pb-28
-        overflow-hidden
-        scroll-mt-20
-      "
+      className="relative w-full pt-36 md:pt-44 pb-28 overflow-hidden scroll-mt-20"
       initial="hidden"
       whileInView="show"
       viewport={{
@@ -54,8 +49,9 @@ export default function Home() {
             color="#60A5FA"
             speed="4s"
             onClick={() => {
-              const aboutSection = document.getElementById("about");
-              aboutSection?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Get Started
