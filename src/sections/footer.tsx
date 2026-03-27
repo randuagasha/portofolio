@@ -73,14 +73,14 @@ export default function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/randuagasha"
+                href="https://www.linkedin.com/in/randu-agasha-5936993aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 className="text-neutral-400 hover:text-white transition"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://instagram.com/randuagasha"
+                href="https://www.instagram.com/notrannnnn"
                 target="_blank"
                 className="text-neutral-400 hover:text-white transition"
               >

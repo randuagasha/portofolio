@@ -22,7 +22,7 @@ export default function Home() {
           variants={fadeUp}
           className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white"
         >
-          Hi, I'm Randu
+          Hi, Im Randu
         </motion.h1>
 
         <motion.p

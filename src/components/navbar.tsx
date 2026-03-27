@@ -9,14 +9,9 @@ export default function Navbar() {
         border-b border-black/10
       "
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <h1 className="text-xl text-white font-semibold">
-          Notrann
-        </h1>
-
-        {/* Desktop menu */}
-        <ul className="hidden md:flex gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-7 flex items-center justify-end relative">
+        {/* Desktop menu (center) */}
+        <ul className="hidden md:flex gap-8 items-center absolute left-1/2 -translate-x-1/2">
           <li>
             <a
               href="#home"
@@ -51,7 +46,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile menu */}
+        {/* Mobile menu (tetap kanan) */}
         <MobileMenu />
       </div>
     </nav>

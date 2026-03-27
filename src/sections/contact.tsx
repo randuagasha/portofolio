@@ -80,7 +80,7 @@ export default function Contact() {
           Contact <span className="text-blue-500">Me</span>
         </h2>
         <p className="mt-4 text-[#94A3B8]">
-          Let's discuss your project or exciting collaboration opportunities
+          Lets discuss your project or exciting collaboration opportunities
         </p>
       </motion.div>
 
@@ -92,8 +92,8 @@ export default function Contact() {
               Let’s Connect
             </h3>
             <p className="text-[#94A3B8] max-w-md">
-              I'm always open to new projects, creative ideas, or just discussing
-              technology. Don't hesitate to reach out to me!
+              Im always open to new projects, creative ideas, or just discussing
+              technology. Dont hesitate to reach out to me!
             </p>
           </div>
 
@@ -116,12 +116,12 @@ export default function Contact() {
             <ContactItem
               icon={<Linkedin />}
               title="LinkedIn"
-              value="linkedin.com/in/randuagasha"
+              value="Randu Agasha"
             />
             <ContactItem
               icon={<Instagram />}
               title="Instagram"
-              value="instagram.com/notrannnnn"
+              value="notrannnnn"
             />
           </div>
         </motion.div>

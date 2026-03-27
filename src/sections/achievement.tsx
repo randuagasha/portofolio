@@ -58,7 +58,7 @@ const achievements = [
     title: "Sertifikat Peserta Webinar Digdaya x Hackathon",
     desc: "Participation in the Digdaya x Hackathon webinar series#10: Rethinking the Ledger - Membangun Sistem Keuangan Modern yang Immutable dan Scalable.",
     year: "2026",
-    image: "/images/digdayaxhackathon26webinar.jpg"
+    image: "/images/digdaya.jpg"
   }
 ];
 
