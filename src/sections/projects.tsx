@@ -69,7 +69,7 @@ export default function Projects() {
             variants={fadeUp}
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
-            className="rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-lg p-5"
+            className="rounded-2xl  border border-white/10 p-5"
           >
             <div className="flex flex-col h-full">
               {/* Image */}
@@ -82,7 +82,7 @@ export default function Projects() {
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 from-white/10 to-transparent pointer-events-none" />
                 </div>
               )}
 
