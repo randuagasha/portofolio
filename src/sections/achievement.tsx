@@ -25,41 +25,47 @@ const fadeUp = {
 
 const achievements = [
   {
-    title: "Lomba Web Design Universitas Harekat Negeri",
-    desc: "Participation in the web design competition at the state university of Harekat",
+    title: "Web Creation Competition Univeristas Islam Nahdlatul Ulama Jepara",
+    desc: "Participation in the web developemnt competition at the Nahdlatul Ulama Islamic University of Jepara",
+    year: "2026",
+    image: "/images/WCC_UINU_JEPARA.png",
+  },
+  {
+    title: "Nasional IT Competition “Web Design” ",
+    desc: "Participation in the web design competition at the State University of Harekat",
     year: "2025",
     image: "/images/webdesignhmpti.jpg",
   },
   {
-    title: "Lomba UI/UX Design UIN",
+    title: "UI/UX Design Competition",
     desc: "Participation in the UI/UX design competition at Sunan Kalijaga State Islamic University, Yogyakarta",
     year: "2025",
     image: "/images/uiuxdesignuin.jpg",
   },
   {
-    title: "Sertifikat Peserta Kelas Investasi Saham",
-    desc: "Participation in stock investment classes at Islamic universities in Indonesia",
-    year: "2025",
-    image: "/images/investsahamuii.jpg",
-  },
-  {
-    title: "Sertifikat Peserta Kelas Investasi Crypto",
-    desc: "Participation in cryptocurrency investment classes at Islamic universities in Indonesia",
-    year: "2025",
-    image: "/images/investcryptouii.jpg",
-  },
-  {
-    title: "Sertifikat Peserta Workshop Technopreneur",
+    title: "Technopreneur Workshop Participant Certificate",
     desc: "Participation in the technopreneur workshop at Padjajaran University (UNPAD)",
     year: "2025",
     image: "/images/technopreneur.png",
   },
   {
-    title: "Sertifikat Peserta Webinar Digdaya x Hackathon",
-    desc: "Participation in the Digdaya x Hackathon webinar series#10: Rethinking the Ledger - Membangun Sistem Keuangan Modern yang Immutable dan Scalable.",
+    title: "Capital Market School Certificate",
+    desc: "Has completed the Capital Market School organized by Laba Sekuritas together with the Indonesian Stock Exchange.",
     year: "2026",
-    image: "/images/digdaya.jpg"
-  }
+    image: "/images/SPMlaba.png",
+  },
+  {
+    title: "Stock Investment Class Participant Certificate",
+    desc: "Participation in stock investment classes at Islamic universities in Indonesia",
+    year: "2025",
+    image: "/images/investsahamuii.jpg",
+  },
+  {
+    title: "Cryptocurrency Investment Class Participant Certificate",
+    desc: "Participation in cryptocurrency investment classes at Islamic universities in Indonesia",
+    year: "2025",
+    image: "/images/investcryptouii.jpg",
+  },
 ];
 
 export default function Achievement() {

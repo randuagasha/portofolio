@@ -6,26 +6,43 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Cashbhak Cashier Web",
+    title: "Revion Management System Web (Personal)",
     description:
-      "made with next.js with styling using tailwind css, with database from mysql",
+      "Revion is a website for car workshop management, built using Next.JS and Express.JS with a MySQL database.",
+    imageUrl: "/images/revion.png",
+    demoUrl: "https://revion.co.id/",
+    githubUrl: "https://github.com/randuagasha/Revion-FE-Project-SAS",
+  },
+  {
+    title: "Food Rescue (Team)",
+    description:
+      "Food Rescue is a web-based platform designed to reduce food waste by connecting food providers, local businesses, and consumers through a digital marketplace, this is a competition project.",
+    imageUrl: "/images/foodrescue.png",
+    demoUrl: "https://foodrescue.web.id/",
+    githubUrl: "https://github.com/RezaAdityaRamadhan26/food-rescue-fe",
+  },
+  {
+    title: "Cashbhak Cashier Web (Team)",
+    description:
+      "Cashback is a cashier management website, which aims to manage product stock, financial records, and transactions, this is a competition project.",
     imageUrl: "/images/cashbhak.png",
     demoUrl: "https://cashbhak.vercel.app/",
     githubUrl: "https://github.com/RezaAdityaRamadhan26/CashBhak",
   },
   {
-    title: "UI/UX Learning App Mobile",
-    description: "UI/UX mobile application design for learning",
+    title: "UI/UX Learning App Mobile (Team)",
+    description: "Starmate is a UI/UX wireframe for a mobile learning application, with a minimalist design that makes it easy for users to use the application, this is a competition project.",
     imageUrl: "/images/STARMATE2.png",
     demoUrl:
       "https://www.figma.com/proto/ju3XV3O5yJfbFMJpkJEnRN/STARMATE-LEARNING?page-id=0%3A1&node-id=695-2310&starting-point-node-id=695%3A2310&t=s4hv5Vc3JupyqsDn-1",
-    figmaUrl: "https://www.figma.com/design/ju3XV3O5yJfbFMJpkJEnRN/STARMATE-LEARNING?node-id=0-1&t=jXHOB7z95QGZDCtC-1",
+    figmaUrl:
+      "https://www.figma.com/design/ju3XV3O5yJfbFMJpkJEnRN/STARMATE-LEARNING?node-id=0-1&t=jXHOB7z95QGZDCtC-1",
   },
   {
-    title: "Library Management System Web (School Project)",
+    title: "Library Management System Web (Personal)",
     description:
-      "Library management website using NextJS and MySQL for the database, I made this for a school project assignment [SORRY ERROR]",
-    imageUrl: "/images/library.png",
+      "Library management website using NextJS and MySQL for the database, I made this for a school project assignment.",
+    imageUrl: "/images/notranlibrary.png",
     demoUrl: "https://librarywebaas.vercel.app/",
     githubUrl: "https://github.com/randuagasha/library-web-aas",
   },
@@ -47,7 +64,7 @@ export default function Projects() {
           variants={fadeUp}
           className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white"
         >
-          Best <span className="text-blue-400">Projects</span>
+          Portofolio <span className="text-blue-400">Projects</span>
         </motion.h2>
 
         <motion.p
