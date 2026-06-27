@@ -21,7 +21,7 @@ export default function About() {
             variants={fadeUp}
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white"
           >
-            Hi, I&apos;m Randu
+            Hi, I&apos;m Keola Randu Agasha
           </motion.h2>
 
           <motion.p
@@ -35,17 +35,15 @@ export default function About() {
             variants={fadeUp}
             className="text-[#94A3B8] leading-relaxed pt-4 text-sm sm:text-base"
           >
-            Hi, I&apos;m Keola Randu Agasha, a Software Engineering student
-            passionate about building modern web applications. I develop web
-            experiences using HTML, CSS, JavaScript, and React, and I also have
-            experience with Next.js to create responsive and dynamic
-            applications. On the backend side, I am learning Golang and SQL,
-            which allows me to build solid and efficient server-side
-            applications. I also have some experience in mobile app development
-            using Flutter and React Expo, and I am exploring Python for various
-            projects. I enjoy learning new technologies and improving my skills
-            with every project I take on. My goal is to create applications that
-            are not only functional but also visually appealing.
+            I am a student at Taruna Bhakti Vocational High School in Depok,
+            majoring in software engineering. I enjoy creating modern and
+            minimalist websites with user experience in mind. I build websites
+            using Next.JS, TypeScript, Node.JS, Express.JS, Tailwind CSS, MySQL,
+            and Supabase. I am also currently studying Expo in mobile app
+            development and have learned to use Flutter. I am also learning
+            Golang and Python. I am very excited to expand my skills. My goal is
+            to create applications that are not only functional but also
+            visually appealing.
           </motion.p>
         </div>
 
@@ -56,7 +54,7 @@ export default function About() {
         >
           <div className="relative w-full max-w-sm h-64 sm:h-72 md:h-96">
             <Image
-              src="/images/pf.jpg"
+              src="/images/me.jpeg"
               alt="Profile"
               fill
               className="object-cover rounded-lg"

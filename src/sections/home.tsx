@@ -22,25 +22,21 @@ export default function Home() {
           variants={fadeUp}
           className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white"
         >
-          Hi, Im Randu
+          Hello There!
         </motion.h1>
 
         <motion.p
           variants={fadeUp}
           className="mt-3 text-[#94A3B8] text-base sm:text-lg md:text-xl"
         >
-          Software Engineering Student
+          I am Keola Randu Agasha
         </motion.p>
 
         <motion.p
           variants={fadeUp}
           className="mt-6 text-sm sm:text-base text-[#94A3B8] leading-relaxed"
         >
-          I develop modern web experiences that balance functionality and
-          aesthetics. Driven by curiosity to learn, build, and improve with
-          every project I take on. I have gained solid skills in HTML, CSS,
-          JavaScript, React, Next.js, and Flutter, along with a basic
-          understanding of MySQL and Golang.
+          I&apos;m a software engineering student, and I enjoy creating modern, minimalist websites that focus on user experience. Want to learn more about me? Let&apos;s explore my world.
         </motion.p>
 
         <motion.div variants={fadeUp} className="mt-8">
@@ -54,7 +50,7 @@ export default function Home() {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Get Started
+            Explore Now!
           </StarBorder>
         </motion.div>
       </div>
